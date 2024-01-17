@@ -1,0 +1,386 @@
+from turtle import *
+from random import randint
+speed(100000)
+def fon1():
+    penup()
+    goto(-250,-200)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(500)
+        left(90)
+        forward(100)
+        left(90)    
+    end_fill()     
+def fon2():
+    penup()
+    goto(-250,-100)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(500)
+        left(90)
+        forward(300)
+        left(90)    
+    end_fill()
+def fon11():
+    penup()
+    goto(-250,-200)
+    pendown()
+    color('dark green')
+    begin_fill()
+    for i in range(2):
+        forward(500)
+        left(90)
+        forward(100)
+        left(90)    
+    end_fill()     
+def fon22():
+    penup()
+    goto(-250,-100)
+    pendown()
+    color('dark blue')
+    begin_fill()
+    for i in range(2):
+        forward(500)
+        left(90)
+        forward(300)
+        left(90)    
+    end_fill()     
+def house(x,y):
+    color("black","gray")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(20)
+        right(90)
+        forward(100)
+        right(90)
+    end_fill()
+    color("black")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(50)
+        left(90)
+        forward(100)
+        left(90)
+    end_fill()    
+    x=x+10
+    x22=randint(1,5)
+    if x22 ==1:
+        color('yellow')
+    if x22 ==2:
+        color('orange')
+    if x22 ==3:
+        color('white')
+    if x22 ==4:
+        color('purple')
+    if x22 ==5:
+        color('blue')                
+    for i in range(5):
+        penup()
+        y=y+15
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(10)
+            left(90)
+        end_fill()
+    x=x+20
+    
+    for i in range(5):
+        penup()
+        
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(10)
+            left(90)
+        end_fill()
+        y=y-15 
+def house1(x,y):
+    color("black","gray")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(15)
+        right(90)
+        forward(60)
+        right(90)
+    end_fill()
+    color("black")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(40)
+        left(90)
+        forward(60)
+        left(90)
+    end_fill()    
+    x=x+6
+    x21=randint(1,5)
+    if x21 ==1:
+        color('yellow')
+    if x21 ==2:
+        color('orange')
+    if x21 ==3:
+        color('white')
+    if x21 ==4:
+        color('purple')
+    if x21 ==5:
+        color('blue')
+    for i in range(3):
+        penup()
+        y=y+15
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(5)
+            left(90)
+        end_fill()
+    x=x+12
+    
+    for i in range(3):
+        penup()
+        
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(5)
+            left(90)
+        end_fill()
+        y=y-15
+    x=x+13    
+    for i in range(3):
+        penup()
+        y=y+15
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(5)
+            left(90)
+        end_fill()
+    x=x+12    
+def sun():
+    penup()
+    goto(140, 140)
+    pendown()
+    begin_fill()
+    color('orange', 'yellow')
+    for i in range(18):
+        forward(40)
+        left(100)
+    end_fill()
+def moon():
+    penup()
+    goto(-140, 140)
+    pendown()
+    begin_fill()
+    color("black","light yellow")
+    circle(25)
+    end_fill()
+    penup()
+    goto(-135, 140)
+    pendown()
+    begin_fill()
+    color("dark blue")
+    circle(22) 
+    end_fill()
+def stars(x,y):
+    penup()
+    goto(x,y)
+    pensize(2)
+    color("yellow")
+    pendown()
+    begin_fill()
+    for i in range(5):
+        forward(15)
+        left(144)
+    end_fill()
+def house2(x,y):
+    color("black","gray")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(20)
+        right(90)
+        forward(100)
+        right(90)
+    end_fill()
+    color("black")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(50)
+        left(90)
+        forward(100)
+        left(90)
+    end_fill()    
+    x=x+10
+    color('light blue')                
+    for i in range(5):
+        penup()
+        y=y+15
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(10)
+            left(90)
+        end_fill()
+    x=x+20
+    
+    for i in range(5):
+        penup()
+        
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(10)
+            left(90)
+        end_fill()
+        y=y-15 
+def house11(x,y):
+    color("black","gray")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(15)
+        right(90)
+        forward(60)
+        right(90)
+    end_fill()
+    color("black")
+    penup()
+    goto(x,y)
+    right(180)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(40)
+        left(90)
+        forward(60)
+        left(90)
+    end_fill()    
+    x=x+6
+    color('light blue')
+    for i in range(3):
+        penup()
+        y=y+15
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(5)
+            left(90)
+        end_fill()
+    x=x+12
+    
+    for i in range(3):
+        penup()
+        
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(5)
+            left(90)
+        end_fill()
+        y=y-15
+    x=x+13    
+    for i in range(3):
+        penup()
+        y=y+15
+        goto(x,y)
+        pendown()
+        begin_fill()
+        for i in range(4):
+            forward(5)
+            left(90)
+        end_fill()
+    x=x+12
+def white(x,y):
+    color("light grey")   
+    for i in range(3):
+        x+=25
+        penup()
+        goto(x,y)
+        begin_fill()
+        pendown()
+        circle(15)
+        end_fill()
+    left(90)
+    left(90)
+    y+=50
+    
+    for i in range(2):
+        penup()
+        goto(x,y)
+        forward(39)
+        begin_fill()
+        pendown()
+        circle(16)
+        x+=25
+        end_fill()
+def sneg(x,y):
+    penup()
+    goto(x,y)
+    pendown()
+    begin_fill()
+    color('white')
+    for i in range(18):
+        forward(5)
+        left(110)
+    end_fill()
+def rain(x,y):
+    penup()
+    goto(x,y)
+    pendown()
+    begin_fill()
+    color('blue')
+    circle(2)
+    end_fill()
+def luja(x,y):
+    penup()
+    goto(x,y)
+    pendown()
+    begin_fill()
+    color("blue")
+    circle(9)
+    end_fill()
+def luja1(x,y):
+    penup()
+    goto(x,y)
+    pendown()
+    begin_fill()
+    color("light blue")
+    circle(8)
+    end_fill()                                                    

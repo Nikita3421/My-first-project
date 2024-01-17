@@ -1,0 +1,229 @@
+import city
+from turtle import *
+from random import randint
+w123 = input("Выберете время суток: день/ночь")
+w123 = w123.lower()
+w124 = input("Выберете время годя: лето/зима/осень/весна")
+w124 = w124.lower()
+print(w123+",",w124)
+if w123 == "день":
+    if w124 == "лето":
+        color("green")
+        city.fon1()
+        color('blue')
+        city.fon2()
+        y2=-110
+        for i in range(15): 
+            x=randint(1,10) 
+            city.house11(randint(-220,200),y2)
+            city.house2(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        y1=180
+        city.white(-180,100)
+        left(180)
+        city.white(-20,120)
+        left(180)
+        city.white(120,60)
+        left(180)
+        city.white(-60,30)
+        city.sun()
+    if w124 == "зима":
+        color("black","white")
+        city.fon1()
+        color('light blue')
+        city.fon2()
+        y4=-125
+        for i in range(20): 
+            x33=randint(1,5) 
+            city.luja1(randint(-220,220),y4)
+            city.luja1(randint(-220,220),y4)
+            y4-=x33
+        y2=-110
+        for i in range(15): 
+            x=randint(1,10) 
+            city.house11(randint(-220,200),y2)
+            city.house2(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        y1=180
+        for i in range(70):
+            x2=randint(12,15)
+            y322=randint(-220,220)
+            city.sneg(y322,y1) 
+            y1-=x2
+            if y1 <= 0:    
+                y1=180            
+        city.white(-180,100)
+        left(180)
+        city.white(-20,120)
+        left(180)
+        city.white(120,60)
+        left(180)
+        city.white(-60,30)
+    if w124 == "осень":
+        color("green")
+        city.fon1()
+        color('light blue')
+        city.fon2()
+        y4=-125
+        for i in range(20): 
+            x33=randint(1,5) 
+            city.luja(randint(-220,220),y4)
+            city.luja(randint(-220,220),y4)
+            y4-=x33
+        y2=-110
+        for i in range(15): 
+            x=randint(1,10) 
+            city.house11(randint(-220,200),y2)
+            city.house2(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        y1=180
+        for i in range(100):
+            x2=randint(12,15)
+            y322=randint(-220,220)
+            city.rain(y322,y1) 
+            y1-=x2
+            if y1 <= 0:    
+                y1=180            
+        city.white(-180,100)
+        left(180)
+        city.white(-20,120)
+        left(180)
+        city.white(120,60)
+        left(180)
+        city.white(-60,30)
+    if w124 == "весна":
+        color("white")
+        city.fon1()
+        color('blue')
+        city.fon2()
+        y4=-125
+        for i in range(20): 
+            x33=randint(1,5) 
+            city.luja1(randint(-220,220),y4)
+            city.luja(randint(-220,220),y4)
+            y4-=x33
+        y2=-110
+        for i in range(17): 
+            x=randint(1,10) 
+            city.house11(randint(-220,200),y2)
+            city.house2(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        city.white(-180,100)
+        left(180)
+        city.white(-20,120)
+        left(180)
+        city.white(120,60)
+        left(180)
+        city.white(-60,30)
+        city.sun()
+elif w123 == "ночь":
+    if w124 == "лето":
+        city.fon11()
+        city.fon22()
+        y1=180
+        for i in range(15):    
+            x2=randint(12,15)
+            city.stars(randint(-220,200),y1)
+            city.stars(randint(-220,200),y1)
+            y1-=x2
+            if y1 <= -20:
+                y1=180 
+        y2=-110
+        for i in range(15): 
+            x=randint(1,10) 
+            city.house1(randint(-220,200),y2)
+            city.house(randint(-220,200),y2)
+            y2-=x
+        pensize(2)    
+        city.moon()
+    if w124 == "зима":
+        color("black","white")
+        city.fon1()
+        city.fon22() 
+        y4=-125
+        for i in range(20): 
+            x33=randint(1,5) 
+            city.luja1(randint(-220,220),y4)
+            city.luja1(randint(-220,220),y4)
+            y4-=x33
+        y2=-110
+        for i in range(15): 
+            x=randint(1,10) 
+            city.house1(randint(-220,200),y2)
+            city.house(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        y1=180
+        for i in range(100):
+            x2=randint(12,15)
+            y322=randint(-220,220)
+            city.sneg(y322,y1) 
+            y1-=x2
+            if y1 <= 0:    
+                y1=180            
+        pensize(2)
+        city.moon()      
+    if w124 == "осень":
+        color("green")
+        city.fon1()
+        city.fon22()
+        y4=-125
+        for i in range(20): 
+            x33=randint(1,5) 
+            city.luja(randint(-220,220),y4)
+            city.luja(randint(-220,220),y4)
+            y4-=x33
+        y2=-110
+        for i in range(15): 
+            x=randint(1,10) 
+            city.house1(randint(-220,200),y2)
+            city.house(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        y1=180
+        for i in range(100):
+            x2=randint(12,15)
+            y322=randint(-220,220)
+            city.rain(y322,y1) 
+            y1-=x2
+            if y1 <= 0:    
+                y1=180            
+        city.white(-180,100)
+        left(180)
+        city.white(-20,120)
+        left(180)
+        city.white(120,60)
+        left(180)
+        city.white(-60,30)
+    if w124 == "весна":
+        color("white")
+        city.fon1()
+        city.fon22()
+        y4=-125
+        y1=180
+        for i in range(15):    
+            x2=randint(12,15)
+            city.stars(randint(-220,200),y1)
+            city.stars(randint(-220,200),y1)
+            y1-=x2
+            if y1 <= -20:
+                y1=180
+        for i in range(20): 
+            x33=randint(1,5) 
+            city.luja1(randint(-220,220),y4)
+            city.luja(randint(-220,220),y4)
+            y4-=x33
+        y2=-110
+        for i in range(17): 
+            x=randint(1,10) 
+            city.house1(randint(-220,200),y2)
+            city.house(randint(-220,200),y2)
+            y2-=x
+        pensize(2)
+        city.moon()
+hideturtle()
+exitonclick()
